@@ -14,13 +14,10 @@ articulo = Article(input("Ingresa la url de la pagina: "), language="es")
 articulo.download()
 articulo.parse()
 
-#Unimos el titulo y el contenido del articulo en una variable
-#texto = articulo.title + "\n" + articulo.text
-
 #Pasamos la variable de texto a audio con la funcion gtts
 audio = gTTS(articulo.text, lang="es")
 
-#Guardamos el audio con el formato mp3 
+#Guardamos el audio con el formato mp3
 audio.save("audio.mp3")
 
 
