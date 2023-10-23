@@ -7,7 +7,7 @@ from newspaper import Article
 from gtts import gTTS
 
 #pedimos la url de la pagina cuyo texto queremos convertir a audio
-#Presuponiendo que el articulo estará en español
+#presuponiendo que el articulo estará en español
 articulo = Article(input("Ingresa la url de la pagina: "), language="es")
 
 #Descagarmos y analizamos el contenido del articulo
